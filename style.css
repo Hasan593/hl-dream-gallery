@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    background: rgb(216 216 216);
+}
+
+/*-------------------------------------- navbar -------------------------------------*/
+nav{
+    background: #f1f1f1;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+nav>ul>li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+.active{
+    color: white;
+    background: #04aa06;
+
+}
+.dropdown-content{
+    display: none;
+    background: #f9f9f9;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+li a:hover:not(.active), .dropdown:hover .dropdown-btn{
+    background: #555;
+    color: white;
+}
+
+/*-------------------------------------- viwe port -------------------------------------*/
+.title{
+    padding: 20px 7px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.wrapper{
+    margin-left: 25%;
+    padding: 20px 30px;
+    position: relative;
+}
+.aside{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 10%;
+}
+
+/*-------------------------------------- gallery -------------------------------------*/
+.aside .gallery{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 280px;
+    background: #f1f1f1;
+}
+.aside>.gallery img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.8;
+}
+.aside .gallery:hover{
+    border: 1px solid #777;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.aside>.gallery img:hover{
+    opacity: 1;
+}
+.gallery>.description{
+    padding: 15px;
+}
+.gallery>.description>p{
+    margin: 10px 0;
+    text-align: justify;
+}
+.gallery>.description button{
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid green;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gallery>.description button:hover{
+    background: #149868;
+}
+
+/*-------------------------------------- font awesome -------------------------------------*/
+.font-awesome{
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+.font-awesome .fa-comments{
+    color: #04aa06;
+}
+.font-awesome .fa-star{
+    color: #777;
+}
+.font-awesome .fa-star:hover{
+    color: #04aa06;
+    cursor: pointer;
+}
+
+/*-------------------------------------- footer -------------------------------------*/
+footer{
+    padding: 30px 20px;
+    background: #555;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 20px;
+}
+
+/*-------------------------------------- scrollbar -------------------------------------*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: green;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(0, 128, 0, 0.779);
+}
+
